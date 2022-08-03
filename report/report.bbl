@@ -1,0 +1,41 @@
+\begin{thebibliography}{1}
+
+\bibitem{doc2vec}
+Quoc Le and Tomas Mikolov.
+\newblock Distributed representations of sentences and documents.
+\newblock In {\em Proceedings of the 31st International Conference on
+  International Conference on Machine Learning - Volume 32}, ICML'14, pages
+  II--1188--II--1196. JMLR.org, 2014.
+
+\bibitem{studyPaper}
+Avinash Madasu and Sivasankar E.
+\newblock A study of feature extraction techniques for sentiment analysis,
+  2019.
+
+\bibitem{amzfood}
+Julian~John McAuley and Jure Leskovec.
+\newblock From amateurs to connoisseurs: Modeling the evolution of user
+  expertise through online reviews.
+\newblock In {\em Proceedings of the 22nd International Conference on World
+  Wide Web}, WWW '13, pages 897--908, New York, NY, USA, 2013. Association for
+  Computing Machinery.
+
+\bibitem{scikit-learn}
+F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
+  M.~Blondel, P.~Prettenhofer, R.~Weiss, V.~Dubourg, J.~Vanderplas, A.~Passos,
+  D.~Cournapeau, M.~Brucher, M.~Perrot, and E.~Duchesnay.
+\newblock Scikit-learn: Machine learning in {P}ython.
+\newblock {\em Journal of Machine Learning Research}, 12:2825--2830, 2011.
+
+\bibitem{Genism}
+Radim {\v R}eh{\r u}{\v r}ek and Petr Sojka.
+\newblock {Software Framework for Topic Modelling with Large Corpora}.
+\newblock In {\em {Proceedings of the LREC 2010 Workshop on New Challenges for
+  NLP Frameworks}}, pages 45--50, Valletta, Malta, May 2010. ELRA.
+
+\bibitem{tfidf}
+Claude Sammut and Geoffrey~I. Webb, editors.
+\newblock {\em TF--IDF}, pages 986--987.
+\newblock Springer US, Boston, MA, 2010.
+
+\end{thebibliography}

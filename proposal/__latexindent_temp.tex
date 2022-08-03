@@ -1,0 +1,48 @@
+\documentclass[12pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage{cite}
+\usepackage{hyperref}
+
+\title{Predicting Whether the Meaning of a Text is Positive or Negative}
+\author{Nikolaos Gounakis, AM: 1254}
+\date{December 2021}
+
+\begin{document}
+
+\maketitle
+
+\section{Intro}
+In applications like ChatBots or Video Games it is useful to understand
+various concepts of text. One of them is the ability to understand if a piece of 
+text provides a negative or a positive meaning. That is a binary classification 
+problem and we propose a solution of constructing a ML model trained in 
+Amazon Fine Food Reviews Dataset \cite{10.1145/2488388.2488466}. 
+
+\section{Dataset}
+This dataset consists of reviews of fine foods from amazon. 
+The data span a period of more than 10 years, including all ~500,000 reviews up to October 2012. Reviews include product and user information, ratings, and a plain text review. 
+It also includes reviews from all other Amazon categories.
+
+The goal here is to determine wether a review is positive or negative.
+\url{https://www.kaggle.com/snap/amazon-fine-food-reviews}
+
+\section{Methodology}
+
+There are several techniques to extract features from text but we will use 
+and compare methods that are included in scikit-learn, such as the \textbf{Bag of Words} and
+\textbf{TF-IDF}. We will use these methods to transform the text in to a feature
+vector to provide as input to the algorithms.
+\url{https://scikit-learn.org/stable/modules/feature_extraction.html}
+
+Then we will train and evaluate models comparing the following algorithms for 
+binary classification \textbf{KNN}, \textbf{SVM}, \textbf{Linear Regression} and 
+\textbf{Naive Bayes}, \textbf{Random Forest}.
+
+For each algorithm and feature extraction combination we will compute the following metrics:
+\textbf{Accuracy}, \text{AUC} and
+
+\bibliographystyle{plain}
+\bibliography{bib/proposal}
+
+
+\end{document}

@@ -1,0 +1,54 @@
+\documentclass[12pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage{cite}
+\usepackage{hyperref}
+
+\title{Multi-Class Sentiment Analysis on Amazon Fine Food Reviews}
+\author{Nikolaos Gounakis, AM: 1254}
+\date{December 2021}
+
+\begin{document}
+
+\maketitle
+
+\section{Intro}
+In Web applications it is useful to understand various concepts of text. 
+One of them is the ability to understand if a piece of text provides a negative,
+a positive or a neutral meaning. That can result to a new way of producing analytics 
+for users when analyzing reviews or social media posts.
+The problem described is a multi-class classification problem and we propose 
+a solution of constructing a ML model trained in Amazon Fine Food Reviews 
+Dataset \cite{10.1145/2488388.2488466}. 
+
+\section{Dataset}
+This dataset consists of reviews of fine foods from amazon. 
+The data span a period of more than 10 years, including all $\approx$500,000 reviews up to October 2012. Reviews include product and user information, ratings, and a plain text review. 
+It also includes reviews from all other Amazon categories.
+\url{https://www.kaggle.com/snap/amazon-fine-food-reviews}
+
+\section{Methodology}
+
+There are several techniques to extract features from text. We will use 
+and compare two existing methods \textbf{Doc2vec (\url{https://radimrehurek.com/gensim/models/doc2vec.html})} and
+\textbf{TF-IDF \url{(https://scikit-learn.org/stable/modules/feature_extraction.html})}, 
+used and tested on the following paper \cite{madasu2019study} and evaluate them on 
+almost the same algorithms. It is important to mention that in our case a feature
+selection must be performed because of the large corpus. We will do that by tuning the hyperparameters
+of the methods we mention like the authors did in \cite{madasu2019study}. 
+
+After the feature extraction we will split the data (train,test) using
+\textbf{10-Fold Cross Validation} and then train and evaluate the resulting models 
+of the following algorithms for multi-class classification:
+\textbf{KNN}, \textbf{SVM}, \textbf{Logistic Regression}, 
+\textbf{Naive Bayes} and \textbf{Random Forest}.
+
+For each algorithm and feature extraction combination we will compute the 
+following  metrics: \textbf{Accuracy}, \textbf{AUC} and \textbf{F1}.
+
+Finally we will analyze the results and propose the final model.
+
+\bibliographystyle{plain}
+\bibliography{bib/proposal}
+
+
+\end{document}
